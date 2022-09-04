@@ -1,0 +1,73 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(29, 143, 163);
+    color: white;
+}
+
+header {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(20, 101, 116);
+    padding: 20px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 60px;
+    margin-left: 15px;
+}
+
+nav {
+    font-size: 25px;
+    float: right;
+    margin-top: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+figure {
+   position: relative; 
+}
+
+#starry-night {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#myself {
+    position: absolute;
+    width: 180px;
+    height: 260px;
+    left: 150px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+#about-me {
+    margin: 10px 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+hr {
+    width: 30%;
+    margin-bottom: 12px;
+}
+
+#projects {
+    margin: 30px 30px 10px 30px;
+    text-align: center;
+}
+
