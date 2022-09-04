@@ -71,3 +71,49 @@ hr {
     text-align: center;
 }
 
+#first-project {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+
+#first-project img {
+    width: 50%;
+    height: 400px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 5px dashed rgb(20, 101, 116);
+}
+
+#first-project p {
+    background:rgb(20, 101, 116);
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.other-projects {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.other-projects img {
+    width: 47%;
+    border-radius: 20px;
+    border: 5px dashed rgb(20, 101, 116);
+    margin: 5px;
+}
+
+.other-projects p {
+    background:rgb(20, 101, 116);
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
