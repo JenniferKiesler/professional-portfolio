@@ -44,11 +44,12 @@ figure {
 
 #myself {
     position: absolute;
-    width: 180px;
+    width: 210px;
     height: 260px;
-    left: 150px;
+    left: 135px;
     top: 20px;
-    border-radius: 50%;
+    border-radius: 105px;
+    border: 2px solid white;
 }
 
 #about-me {
