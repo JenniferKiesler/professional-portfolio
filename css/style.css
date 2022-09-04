@@ -4,6 +4,13 @@ body {
     color: white;
 }
 
+hr {
+    width: 30%;
+    margin-bottom: 12px;
+}
+
+/*header*/
+
 header {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: rgb(20, 101, 116);
@@ -32,6 +39,12 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    color:rgb(43, 204, 233);
+}
+
+/*figure*/
+
 figure {
    position: relative; 
 }
@@ -52,6 +65,8 @@ figure {
     border: 2px solid white;
 }
 
+/*about me*/
+
 #about-me {
     margin: 10px 30px;
     line-height: 1.5;
@@ -62,16 +77,14 @@ h2 {
     font-size: 30px;
 }
 
-hr {
-    width: 30%;
-    margin-bottom: 12px;
-}
+/*projects*/
 
 #projects {
     margin: 30px 30px 10px 30px;
     text-align: center;
 }
 
+/*big image*/
 #first-project {
     text-decoration: none;
     color: white;
@@ -82,7 +95,7 @@ hr {
 #first-project img {
     width: 50%;
     height: 400px;
-    margin: 5px;
+    margin: 15px 5px 5px 5px;
     border-radius: 20px;
     border: 5px dashed rgb(20, 101, 116);
 }
@@ -96,6 +109,13 @@ hr {
     border-radius: 10px;
 }
 
+#first-project img:hover {
+    border-color: rgb(90, 223, 247);
+    transform: scale(1.1);
+    border-width: 7px;
+}
+
+/*small images*/
 .other-projects {
     display: inline;
     text-decoration: none;
@@ -104,17 +124,25 @@ hr {
 }
 
 .other-projects img {
-    width: 47%;
+    width: 45%;
     border-radius: 20px;
     border: 5px dashed rgb(20, 101, 116);
-    margin: 5px;
+    margin: 20px;
 }
 
 .other-projects p {
     background:rgb(20, 101, 116);
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 35px;
+    bottom: 35px;
     padding: 5px;
     border-radius: 10px;
 }
+
+.other-projects img:hover {
+    border-color: rgb(90, 223, 247);
+    transform: scale(1.1);
+    border-width: 7px;
+}
+
+/*contact me*/
