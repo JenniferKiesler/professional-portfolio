@@ -146,3 +146,20 @@ figure {
 }
 
 /*contact me*/
+#contact-me {
+    text-align: center;
+}
+
+#contact-me p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#contact-me li {
+    display: inline;
+    padding: 10px;
+}
+
+#contact-me a {
+    color: white;
+}
