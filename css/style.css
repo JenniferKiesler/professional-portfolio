@@ -63,8 +63,8 @@ figure {
     position: absolute;
     width: 210px;
     height: 260px;
-    left: 125px;
-    top: 20px;
+    left: 11%;
+    top: 6%;
     border-radius: 105px;
     border: 2px solid white;
 }
@@ -80,7 +80,7 @@ figure {
 /*projects*/
 
 #projects {
-    margin: 30px 30px 10px 30px;
+    margin: 30px 10px 10px 10px;
     text-align: center;
 }
 
@@ -187,4 +187,59 @@ figure {
 #resumé a:hover {
     background:rgb(90, 223, 247);
     color: rgb(15, 79, 90);
+}
+
+/*footer*/
+footer {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+@media (max-width: 1180px) {
+    .other-projects img {
+        width: 43%;
+    }
+}
+
+@media (max-width: 970px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    #myself {
+        left: 38%;
+    }
+
+    #first-project img {
+        width: 80%;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+
+    #first-project p {
+        left: 25px;
+        bottom: 35px;
+    }
+
+    .other-projects img {
+        width: 70%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 730px) {
+    #myself {
+        left: 34%;
+    }
+}
+
+@media (max-width: 620px) {
+    #myself {
+        left: 32%;
+    }
 }
