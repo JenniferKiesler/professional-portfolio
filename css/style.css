@@ -6,7 +6,7 @@ body {
 
 hr {
     width: 30%;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -95,7 +95,7 @@ figure {
 #first-project img {
     width: 50%;
     height: 400px;
-    margin: 15px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
     border-radius: 20px;
     border: 5px dashed rgb(20, 101, 116);
 }
@@ -162,4 +162,20 @@ figure {
 
 #contact-me a {
     color: white;
+}
+
+/*resumé*/
+#resumé {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#resumé a {
+    text-decoration: none;
+    color: white;
+    background:rgb(20, 101, 116);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
 }
