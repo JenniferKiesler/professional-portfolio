@@ -1,7 +1,14 @@
+:root {
+    --textColor: white;
+    --backgroundColor: rgb(20, 101, 116);
+    --hoverColor: rgb(90, 223, 247);
+    --hoverText: rgb(15, 79, 90);
+}
+
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background: rgb(29, 143, 163);
-    color: white;
+    color: var(--textColor);
 }
 
 hr {
@@ -14,10 +21,9 @@ h2 {
 }
 
 /*header*/
-
 header {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: rgb(20, 101, 116);
+    background: var(--backgroundColor);
     padding: 20px;
 }
 
@@ -40,7 +46,7 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 10px;
-    color: white;
+    color: var(--textColor);
 }
 
 nav a:hover {
@@ -48,7 +54,6 @@ nav a:hover {
 }
 
 /*figure*/
-
 figure {
    position: relative; 
 }
@@ -66,11 +71,10 @@ figure {
     left: 11%;
     top: 6%;
     border-radius: 105px;
-    border: 2px solid white;
+    border: 2px solid var(--textColor);
 }
 
 /*about me*/
-
 #about-me {
     margin: 10px 30px;
     line-height: 1.5;
@@ -78,7 +82,6 @@ figure {
 }
 
 /*projects*/
-
 #projects {
     margin: 30px 10px 10px 10px;
     text-align: center;
@@ -87,7 +90,7 @@ figure {
 /*big image*/
 #first-project {
     text-decoration: none;
-    color: white;
+    color: var(--textColor);
     position: relative;
     
 }
@@ -97,11 +100,11 @@ figure {
     height: 400px;
     margin: 5px 5px 5px 5px;
     border-radius: 20px;
-    border: 5px dashed rgb(20, 101, 116);
+    border: 5px dashed var(--backgroundColor);
 }
 
 #first-project p {
-    background:rgb(20, 101, 116);
+    background: var(--backgroundColor);
     position: absolute;
     left: 20px;
     bottom: 20px;
@@ -110,7 +113,7 @@ figure {
 }
 
 #first-project img:hover {
-    border-color: rgb(90, 223, 247);
+    border-color: var(--hoverColor);
     transform: scale(1.1);
     border-width: 7px;
 }
@@ -119,19 +122,19 @@ figure {
 .other-projects {
     display: inline;
     text-decoration: none;
-    color: white;
+    color: var(--textColor);
     position: relative;
 }
 
 .other-projects img {
     width: 45%;
     border-radius: 20px;
-    border: 5px dashed rgb(20, 101, 116);
+    border: 5px dashed var(--backgroundColor);
     margin: 20px;
 }
 
 .other-projects p {
-    background:rgb(20, 101, 116);
+    background: var(--backgroundColor);
     position: absolute;
     left: 35px;
     bottom: 35px;
@@ -140,7 +143,7 @@ figure {
 }
 
 .other-projects img:hover {
-    border-color: rgb(90, 223, 247);
+    border-color: var(--hoverColor);
     transform: scale(1.1);
     border-width: 7px;
 }
@@ -161,11 +164,11 @@ figure {
 }
 
 #contact-me a {
-    color: white;
+    color: var(--textColor);
 }
 
 #contact-me a:hover {
-    color:rgb(15, 79, 90);
+    color: var(--hoverText);
 }
 
 /*resumé*/
@@ -177,16 +180,16 @@ figure {
 
 #resumé a {
     text-decoration: none;
-    color: white;
-    background:rgb(20, 101, 116);
+    color: var(--textColor);
+    background: var(--backgroundColor);
     padding: 10px;
     border-radius: 10px;
     margin-top: 40px;
 }
 
 #resumé a:hover {
-    background:rgb(90, 223, 247);
-    color: rgb(15, 79, 90);
+    background:var(--hoverColor);
+    color: var(--hoverText);
 }
 
 /*footer*/
@@ -195,6 +198,7 @@ footer {
     margin-left: 10px;
 }
 
+/* media queries*/
 @media (max-width: 1180px) {
     .other-projects img {
         width: 43%;
