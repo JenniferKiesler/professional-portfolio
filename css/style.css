@@ -63,7 +63,7 @@ figure {
     position: absolute;
     width: 210px;
     height: 260px;
-    left: 135px;
+    left: 125px;
     top: 20px;
     border-radius: 105px;
     border: 2px solid white;
@@ -164,6 +164,10 @@ figure {
     color: white;
 }
 
+#contact-me a:hover {
+    color:rgb(15, 79, 90);
+}
+
 /*resumé*/
 #resumé {
     text-align: center;
@@ -178,4 +182,9 @@ figure {
     padding: 10px;
     border-radius: 10px;
     margin-top: 40px;
+}
+
+#resumé a:hover {
+    background:rgb(90, 223, 247);
+    color: rgb(15, 79, 90);
 }
