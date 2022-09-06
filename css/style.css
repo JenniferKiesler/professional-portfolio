@@ -249,3 +249,25 @@ footer {
         margin: 10px;
     }
 }
+
+@media (max-width: 600px) {
+    nav a {
+        line-height: 1.5;
+    }
+    #contact-me a {
+        line-height: 1.5;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    hr {
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .other-projects p {
+        left: 20px;
+        bottom: 25px;
+    }
+}
