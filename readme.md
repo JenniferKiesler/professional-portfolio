@@ -13,7 +13,7 @@ This portfolio satisfies a typical hiring manager's needs like:
 
 ## Visuals
 
-![Screenshot](images/portfolio-screenshot.png)
+![Screenshot](images/portfolio-screenshot2.png)
 
 ## Deployed Link
 
