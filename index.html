@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <title>Jennifer Kiesler, Professional Portfolio</title>
@@ -30,61 +31,39 @@
     </header>
     <main>
         <figure>
-            <!-- <img id="starry-night" src="images/starry-night.jpg" alt="picture of tiny white stars and a teal colored sky"/> -->
             <img id="myself" src="images/myself-2.jpg" alt="picture of myself"/>
         </figure>
         <section id="about-me">
             <h2>About me</h2>
             <hr/>
-            <p>Hi my name is Jennifer, and I am new to the coding world. I am currently enrolled in a coding bootcamp where I have developed many applications independently and as part of a group. I have acquired many transferable skills from my previous work experiences including problem-solving, communication, and time management that will allow me to excel in the workplace.</p>
+            <p>A Software Developer that has developed many applications independently and as part of a group using technologies like JavaScript, Node.js, and MySQL. I have acquired many transferable skills from my previous work experiences including problem-solving, communication, collaboration, and time management that will allow me to excel in the workplace.</p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <hr/>
-            <a id="first-project" href="https://jenniferkiesler.github.io/toss-me-a-book/" target="_blank">
-                <img src="images/toss-me-a-book.png" alt="screenshot of Toss Me A Book application"/>
-                <p>Toss Me A Book<br/>HTML, CSS, JavaScript</p>
+            <div id="card">
+                <a id="first-project" href="https://jenniferkiesler.github.io/toss-me-a-book/" target="_blank">
+                    <img src="images/toss-me-a-book.png" alt="screenshot of Toss Me A Book application"/>
+                </a>
+                <h3>Toss Me A Book <a href="https://github.com/JenniferKiesler/toss-me-a-book.git" target="_blank"><i class="bi bi-github"></i></a></h3>
+                <p>This application helps the user find a book to read in many different ways.<br/>HTML, CSS, JavaScript</p>
+                <br>
+            </div>
+            <a class="other-projects" href="https://github.com/JenniferKiesler/employee-tracker-app.git" target="_blank">
+                <img src="images/employee-tracker.png" alt="screenshot of the employee tracker app"/>
+                <p>Employee Tracker App<br/>Node.js, Inquirer, MySQL</p>
             </a>
-            <br>
             <a class="other-projects" href="https://github.com/JenniferKiesler/engineering-team-profile.git" target="_blank">
                 <img src="images/engineering-team-profile.png" alt="screenshot of an engineering team profile sample"/>
                 <p>Engineering Team Profile<br/>OOP, Node.js, Jest</p>
-            </a>
-            <a class="other-projects" href="https://github.com/JenniferKiesler/quick-readme-generator.git" target="_blank">
-                <img src="images/readme-sample.png" alt="screenshot of a readme sample"/>
-                <p>Quick README Generator<br/>Node.js</p>
             </a>
             <a class="other-projects" href="https://jenniferkiesler.github.io/anywhere-forecast/" target="_blank">
                 <img src="images/anywhere-forecast.png" alt="screenshot of the Anywhere Forecast"/>
                 <p>Anywhere Forecast<br/>HTML, CSS, JavaScript</p>
             </a>
-            <a class="other-projects" href="https://jenniferkiesler.github.io/work-day-scheduler/" target="_blank">
-                <img src="images/work-day-scheduler.png" alt="screenshot of the Work Day Scheduler"/>
-                <p>Work Day Scheduler<br/>jQuery</p>
-            </a>
             <a class="other-projects" href="https://jenniferkiesler.github.io/code-quiz/" target="_blank">
                 <img src="images/code-quiz.png" alt="screenshot of the Code Quiz"/>
                 <p>Code Quiz<br/>HTML, CSS, JavaScript</p>
-            </a>
-            <a class="other-projects" href="https://jenniferkiesler.github.io/password-generator/" target="_blank">
-                <img src="images/password-generator.png" alt="screenshot of the Password Generator Project"/>
-                <p>Password Generator<br/>JavaScript</p>
-            </a>
-            <a class="other-projects" href="https://jenniferkiesler.github.io/01-code-refactor/" target="_blank">
-                <img src="images/horiseon-code-refactor.png" alt="screenshot of the Horiseon Code Refactor Project"/>
-                <p>Horiseon - Code Refactor<br/>HTML, CSS</p>
-            </a>
-            <a class="other-projects" href="https://jenniferkiesler.github.io/landing-page/" target="_blank">
-                <img src="images/landing-page.png" alt="screenshot of visitor's contact information page"/>
-                <p>Visitor's Contact Info<br/>HTML, CSS</p>
-            </a>
-            <a class="other-projects" href="https://jenniferkiesler.github.io/prework-study-guide/" target="_blank">
-                <img src="images/prework-study-guide.png" alt="screenshot of the prework study guide"/>
-                <p>Prework Study Guide<br/>HTML, CSS, JavaScript</p>
-            </a>
-            <a class="other-projects" href="https://jenniferkiesler.github.io/css-snippets/" target="_blank">
-                <img src="images/css-snippets.png" alt="screenshot of the css snippet cheatsheet"/>
-                <p>CSS Snippets<br/>CSS</p>
             </a>
         </section>
         <section id="contact-me">
@@ -105,7 +84,7 @@
         </section>
     </main>
     <footer>
-        <h3>©️2022 Jennifer Kiesler</h3>
+        <h4>©️2022 Jennifer Kiesler</h4>
     </footer>
 </body>
 </html>
