@@ -237,7 +237,7 @@ footer {
 }
 
 /* media queries*/
-@media (max-width: 970px) {
+@media (max-width: 1040px) {
     header {
         text-align: center;
     }
@@ -250,11 +250,14 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    #myself {
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+}
+@media (max-width: 970px) {
     hr {
         width: 45%
-    }
-    #myself {
-        margin: auto;
     }
     #first-project img {
         height: 400px;
@@ -269,7 +272,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 615px) {
     nav a {
         line-height: 1.5;
     }
