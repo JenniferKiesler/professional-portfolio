@@ -76,8 +76,21 @@ figure {
 /*about me*/
 #about-me {
     margin: 10px 30px;
-    line-height: 1.5;
     text-align: center;
+}
+
+/*skills*/
+#skills {
+    margin: 30px 30px;
+    text-align: center;
+}
+
+#skills ul {
+    line-height: 2;
+}
+
+#skills span {
+    font-weight: bold;
 }
 
 /*projects*/
@@ -93,6 +106,10 @@ h3 {
 
 i {
     color: var(--textColor);
+}
+
+i:hover {
+    color: var(--hoverText);
 }
 
 /*big image*/
@@ -115,7 +132,7 @@ i {
 #first-project img {
     width: 98%;
     height: 500px;
-    margin: 10px 5px;
+    margin: 10px auto;
     border-radius: 20px;
 }
 
@@ -153,7 +170,7 @@ i {
     width: 95%;
     height: 350px;
     border-radius: 20px;
-    margin: 10px 5px;
+    margin: 10px auto;
 }
 
 .other-projects p {
@@ -181,7 +198,6 @@ i {
 
 #contact-me li {
     display: inline;
-    /* line-height: 1.5; */
     padding: 10px;
 }
 
@@ -234,6 +250,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    hr {
+        width: 45%
+    }
     #myself {
         margin: auto;
     }
@@ -246,7 +265,6 @@ footer {
         bottom: 35px;
     }
     .other-projects img {
-        margin: 10px;
         height: 300px;
     }
 }
@@ -262,7 +280,7 @@ footer {
         margin-top: 20px;
     }
     hr {
-        width: 60%;
+        width: 70%;
     }
     #first-card {
         width: 95%;
@@ -283,6 +301,9 @@ footer {
 }
 
 @media (max-width: 400px) {
+    hr {
+        width: 90%;
+    }
     .other-projects p {
         left: 20px;
         bottom: 25px;
@@ -290,7 +311,6 @@ footer {
     .other-projects img {
         width: 95%;
         height: 200px;
-        margin: 5px;
     }
     #first-project img {
         height: 250px;
