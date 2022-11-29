@@ -20,6 +20,10 @@ h2 {
     font-size: 30px;
 }
 
+p {
+    line-height: 1.5;
+}
+
 /*header*/
 header {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -57,23 +61,12 @@ nav a:hover {
 figure {
     width: 100%;
     height: 300px;
-    /* position: relative;  */
     background: url(../images/starry-night.jpg)
 }
 
-
-/* #starry-night {
-    width: 100%;
-    height: 300px;
-    position: relative;
-} */
-
 #myself {
-    /* position: absolute; */
     width: 210px;
     height: 260px;
-    /* left: 11%;
-    top: 6%; */
     border-radius: 105px;
     border: 2px solid var(--textColor);
     margin-left: 130px;
@@ -83,8 +76,21 @@ figure {
 /*about me*/
 #about-me {
     margin: 10px 30px;
-    line-height: 1.5;
     text-align: center;
+}
+
+/*skills*/
+#skills {
+    margin: 30px 30px;
+    text-align: center;
+}
+
+#skills ul {
+    line-height: 2;
+}
+
+#skills span {
+    font-weight: bold;
 }
 
 /*projects*/
@@ -93,7 +99,29 @@ figure {
     text-align: center;
 }
 
+h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+i {
+    color: var(--textColor);
+}
+
+i:hover {
+    color: var(--hoverText);
+}
+
 /*big image*/
+#first-card {
+    border-radius: 20px;
+    border: 5px dashed var(--backgroundColor);
+    width: 75%;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 2px;
+}
+
 #first-project {
     text-decoration: none;
     color: var(--textColor);
@@ -102,11 +130,10 @@ figure {
 }
 
 #first-project img {
-    width: 60%;
+    width: 98%;
     height: 500px;
-    margin: 10px 5px;
+    margin: 10px auto;
     border-radius: 20px;
-    border: 5px dashed var(--backgroundColor);
 }
 
 #first-project p {
@@ -120,33 +147,34 @@ figure {
 }
 
 #first-project img:hover {
-    border-color: var(--hoverColor);
-    border-width: 7px;
-}
-
-#first-project:hover img, #first-project:hover p {
-    transform: scale(1.1);
+    border: 5px solid var(--hoverColor);
 }
 
 /*small images*/
-.other-projects {
-    display: inline;
-    text-decoration: none;
-    color: var(--textColor);
-    position: relative;
+#container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 20px;
+    border: 5px dashed var(--backgroundColor);
+    width: 45%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 2px;
 }
 
 .other-projects img {
-    width: 45%;
+    width: 95%;
     height: 350px;
     border-radius: 20px;
-    border: 5px dashed var(--backgroundColor);
-    margin: 20px;
+    margin: 10px auto;
 }
 
 .other-projects p {
     background: var(--backgroundColor);
-    position: absolute;
     left: 35px;
     bottom: 35px;
     padding: 5px;
@@ -155,12 +183,7 @@ figure {
 }
 
 .other-projects img:hover {
-    border-color: var(--hoverColor);
-    border-width: 7px;
-}
-
-.other-projects:hover img, .other-projects:hover p {
-    transform: scale(1.1);
+    border: 5px solid var(--hoverColor);
 }
 
 /*contact me*/
@@ -214,51 +237,42 @@ footer {
 }
 
 /* media queries*/
-@media (max-width: 1180px) {
-    .other-projects img {
-        width: 40%;
-    }
-}
-
-@media (max-width: 970px) {
+@media (max-width: 1040px) {
     header {
         text-align: center;
     }
-
     nav {
         float: none;
         text-align: center;
     }
-
     figure {
-        /* margin-top: 0px; */
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     #myself {
-        margin: auto;
+        margin-left: 10px;
+        margin-top: 4px;
     }
-
+}
+@media (max-width: 970px) {
+    hr {
+        width: 45%
+    }
     #first-project img {
-        width: 80%;
         height: 400px;
         margin-bottom: 15px;
     }
-
     #first-project p {
         left: 25px;
         bottom: 35px;
     }
-
     .other-projects img {
-        width: 70%;
-        margin: 10px;
+        height: 300px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 615px) {
     nav a {
         line-height: 1.5;
     }
@@ -269,13 +283,39 @@ footer {
         margin-top: 20px;
     }
     hr {
-        width: 60%;
+        width: 70%;
+    }
+    #first-card {
+        width: 95%;
+    }
+    #first-project img {
+        height: 300px;
+    }
+    .card {
+        width: 95%;
+    }
+    .other-projects img {
+        height: 250px;
+    }
+    #contact-me li {
+        display: block;
+        padding: 0px;
     }
 }
 
 @media (max-width: 400px) {
+    hr {
+        width: 90%;
+    }
     .other-projects p {
         left: 20px;
         bottom: 25px;
+    }
+    .other-projects img {
+        width: 95%;
+        height: 200px;
+    }
+    #first-project img {
+        height: 250px;
     }
 }
